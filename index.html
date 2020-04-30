@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang=pl>
+<head>
+	<meta charset="UTF-8">
+	<title> NBA z kanapy </title>
+	<meta name="author" content="Maciej Kur">
+	<meta name="keywords" content="NBA", "koszykówka">
+	<meta name="description" content="Portal o najlepszej koszykarskiej lidze świata">
+	<link rel="stylesheet" href="style.css">
+<script type="text/javascript">
+		function oblicz()
+	{var x = 0 ;
+		if (document.getElementById("6"). checked)
+			{
+			x = 1;
+			document.getElementById("wynikplus"). innerHTML= "Masz rację, Mike sięgnął po tytuł w latach 1991-1993 i 1996-1998" ;
+			document.getElementById("wynik").style.display="none";
+			document.getElementById("wynikplus").style.display="block";
+			}
+   
+				else 
+				
+				{		
+				x = 0;
+				document.getElementById("wynikplus").style.display="none";
+				document.getElementById("wynik").style.display="block";
+				document.getElementById("wynik"). innerHTML= "Niestety nie jest to poprawna odpowiedź";
+				}
+		if (document.getElementById("6a").checked)	
+			{
+			x=x+1;
+			document.getElementById("wynik1plus").style.display="block";
+			document.getElementById("wynik1plus"). innerHTML= "Masz rację, 'Shaq' grał w Orlando Magic, Los Angeles Lakers, Miami Heat, Phoenix Suns, Clevelend Cavaliers i Boston Celtics" ;
+			document.getElementById("wynik1").style.display="none";
+			} 
+				else 
+				{
+				x=x;
+				document.getElementById("wynik1plus").style.display="none";
+				document.getElementById("wynik1").style.display="block";
+				document.getElementById("wynik1"). innerHTML= "Niestety nie jest to poprawna odpowiedź";
+				}	
+		if (document.getElementById("Ojciec i brat"). checked )
+			{
+			x=x+1;
+			document.getElementById("wynik2plus").style.display="block";
+			document.getElementById("wynik2plus"). innerHTML= "Masz rację, w lidze w latach 1986-2002 grał ojciec - Dell Curry, a od roku 2015 w lidze gra młodszy brat - Seth Curry" ;
+			document.getElementById("wynik2").style.display="none";
+			}
+				else 
+				{
+				x=x;
+				document.getElementById("wynik2plus").style.display="none";
+				document.getElementById("wynik2").style.display="block";
+				document.getElementById("wynik2"). innerHTML= "Niestety nie jest to poprawna odpowiedź";
+				}
+		if(x==0)
+			{
+			document.getElementById("rezultat").innerHTML="Niestety, twój wynik to 0/3";
+			}
+				else if(x==1)
+					{
+					document.getElementById("rezultat").innerHTML="Mogło być lepiej, twój wynik to 1/3";
+					}
+						else if(x==2)
+							{
+							document.getElementById("rezultat").innerHTML="Prawie idealnie, twój wynik to 2/3";
+							}
+								else
+									{
+									document.getElementById("rezultat").innerHTML="Perfekcyjnie, twój wynik to 3/3";
+									}
+	}
+</script>
+
+</head>
+<body>
+<img src="logo.png" alt="logo strony" class="center">
+<menu>
+<ul>
+<li><a href="tabela.html">TABELA</a></li>
+<li><a href="nasze artykuły.html"> NASZE ARTYKUŁY</a></li>
+<li><a href="Najlepsze zdjęcia.html"> NAJLEPSZE ZDJĘCIA</a></li>
+<li><a href="terminarz.html"> TERMINARZ</a></li>
+</ul>
+</menu>
+</br>
+</br>
+</br>
+</br>
+</br>
+<h3>O NBA w kliku słowach</h3>
+
+<table class="olidze" style="margin:auto">
+
+<tr>
+
+<td>
+<p id="a" style="float:left">
+National Basketball Association (skrót ang. NBA) – amerykańsko-kanadyjska liga koszykarska,
+ o charakterze profesjonalnym. Tworzy ją 30 zespołów, w tym: 29 ze Stanów Zjednoczonych i 
+ jeden z Kanady. Liga jest aktywnym członkiem USA Basketball, oddziału Fédération Internationale 
+ de Basketball na terytorium Stanów Zjednoczonych. Jej komisarzem od 1 lutego 2014 roku jest Adam Silver. 
+ NBA jest jedną z czterech największych północnoamerykańskich zawodowych lig  
+ sportowych (oprócz niej NFL, NHL i MLB). Gracze NBA są najlepiej opłacanymi sportowcami świata (w średniej  
+ rocznych zarobków).
+</p>
+</td>
+<td>
+<img src="SEO-image-NBA-logoman.jpg" width="400" height="300" style="float:right">
+</td>
+</tr>
+</table>
+</br>
+</br>
+</br>
+</br>
+<img src="How-the-NBA-Playoffs-would-look-if-season-resumes-by-jumping-right-into-postseason.jpg" style="float:none">
+</br>
+</br>
+</br>
+</br>
+</br>
+<fieldset>
+<h2 id="quiz">QUIZ<h2>
+<p id="polecenie">Zaznacz poprawne odpowiedzi i kliknij 'zatwierdź'. Quiz możesz wykonać ponownie poprzez popnowne uzupełnienie luk i kliknięcie 'Zatwierdź'</p>
+</br>
+</br>
+<p>1. Ile tytułów mistrzowskich zdobył Michael Jordan?<p>
+<form name="formularz" onsubmit="oblicz();return false;">
+
+ <ul>
+<li><label><input type="radio" value="6" name="championships" id="6">6</label></li>
+<li><label><input type="radio" value="7" name="championships" id="7">7</label></li>
+<li><label><input type="radio" value="5" name="championships" id="5">5</label></li>
+<li><label><input type="radio" value="3" name="championships" id="3">3</label></li>
+</ul>
+<p id="wynik"></p>
+<p id="wynikplus"></p>
+
+
+<p>2. W ilu drużynach występował Shaquille O'Neal?<p>
+ <ul>
+<li><label><input type="radio" value="6" name="teams" id="6a">6</label></li>
+<li><label><input type="radio" value="7" name="teams" id="7a">2</label></li>
+<li><label><input type="radio" value="5" name="teams" id="5a">4</label></li>
+<li><label><input type="radio" value="3" name="teams" id="3a">5</label></li>
+</ul>
+<p id="wynik1"></p>
+<p id="wynik1plus"></p>
+
+
+<p>3. Kto z najbliższej rodziny rozgrywającego Golden State Warriors Stephena Curry'ego gra/grał w NBA?<p>
+
+ <ul>
+<li><label><input type="radio" value="Ojciec" name="family" id="Ojciec">Ojciec</label></li>
+<li><label><input type="radio" value="Brat" name="family" id="Brat">Brat</label></li>
+<li><label><input type="radio" value="Ojciec i brat" name="family" id="Ojciec i brat">Ojciec i brat</label></li>
+<li><label><input type="radio" value="nikt" name="family" id="nikt">nikt</label></li>
+</ul>
+<p id="wynik2"></p>
+<p id="wynik2plus"></p>
+
+<input type="submit" value="Zatwierdź" style="float:none"></input>
+
+<p id="rezultat" style="float:none"></p>
+</fieldset>
+</form>
+</br>
+</br>
+
+NBA z kanapy 2020 &#174
+</br>
+</br>
+</body>
+</html>
